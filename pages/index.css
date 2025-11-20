@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(#425b9e, #cfd2df);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.principal {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.s-1 {
+    background: linear-gradient(#5667B1, #DBDBDB);
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.usuario {
+    text-align: center;
+}
+
+.usuario img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.usuario h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cargo {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sobremim {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sobremim p {
+    width: 70%;
+    margin: auto;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.projetos {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.projeto-img {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.projeto-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    background: #dcdcdc;
+}
+
+.projeto-img img {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.projeto-img img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+
+.vermais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.vermais button {
+    background: #000;
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 6px;
+}
+
+.vermais a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contato {
+    margin-top: 40px;
+}
+
+.contato h1 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons img {
+    width: 25px;
+}
+
+.icons img {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.25);
+    filter: brightness(1.3);
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 0;
+    }
+
+    .s-1 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sobremim p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+   
+    .projeto-img {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projeto-img img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .usuario img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .usuario h2 {
+        font-size: 18px;
+    }
+
+    .contato h1,
+    .projetos h1,
+    .sobremim h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .vermais button {
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+    }
+}
